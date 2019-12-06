@@ -1,5 +1,2 @@
-bus
-minivan
-auto
-truck
-minibus
+no_car
+car
