@@ -12,12 +12,12 @@ def main():
     parser.add_argument("-out", help="Relative location of output txt files directory", default="out")
     args = parser.parse_args()
 
-    xml_dir = os.path.join(os.path.dirname(os.path.realpath('__file__')), args.xml)
+    xml_dir = os.path.join(os.path.dirname(os.path.realpath('/content/gdrive/My Drive/localisation/annotations')), args.xml)
     if not os.path.exists(xml_dir):
         print("Provide the correct folder for xml files.")
         sys.exit()
 
-    out_dir = os.path.join(os.path.dirname(os.path.realpath('__file__')), args.out)
+    out_dir = os.path.join(os.path.dirname(os.path.realpath('/content/gdrive/My Drive/localisation/annotation')), args.out)
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
 
